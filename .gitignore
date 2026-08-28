@@ -1,0 +1,13 @@
+# 依赖与本地数据
+node_modules/
+data.json
+*.tmp
+
+# 构建产物
+dist/
+
+# macOS
+.DS_Store
+
+# 环境变量
+.env

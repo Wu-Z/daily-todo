@@ -1,0 +1,9 @@
+{
+  "port": 8787,
+  "token": "改成你自己的随机长字符串",
+  "dataFile": "./data.json",
+  "pushEnabled": false,
+  "vapidPublicKey": "",
+  "vapidPrivateKey": "",
+  "vapidSubject": "mailto:you@example.com"
+}

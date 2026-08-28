@@ -1,0 +1,13 @@
+{
+  "name": "daily-todo-server",
+  "version": "1.0.0",
+  "description": "daily-todo 后端 API：云端数据 + 免登录 Token + Web Push 后台推送",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "keys": "npx web-push generate-vapid-keys"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}

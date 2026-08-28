@@ -1,0 +1,14 @@
+{
+  "name": "每日待办",
+  "short_name": "每日待办",
+  "description": "四象限 × 日期时间线，个人每日待办",
+  "start_url": "./每日待办.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

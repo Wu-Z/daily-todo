@@ -1,0 +1,20 @@
+# Nginx 站点配置示例（/etc/nginx/conf.d/daily-todo.conf）
+# 前端静态文件 + 后端 API 反代，HTTPS 用 certbot 自动配置
+server {
+    listen 80;
+    server_name todo.example.com;          # ← 改成你的域名
+
+    # 前端静态资源（frontend/ 目录上传到 /var/www/daily-todo）
+    root /var/www/daily-todo;
+    index 每日待办.html;
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8787;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location / {
+        try_files $uri $uri/ /每日待办.html;
+    }
+}
